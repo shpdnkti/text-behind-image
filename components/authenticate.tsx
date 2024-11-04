@@ -9,11 +9,23 @@ const Authenticate = () => {
   const { toast } = useToast()
   
   const signInWithGoogle = async () => {
+    const getURL = () => {
+      let url =
+        process?.env?.NEXT_PUBLIC_SITE_URL ?? // Set this to your site URL in production env.
+        process?.env?.NEXT_PUBLIC_VERCEL_URL ?? // Automatically set by Vercel.
+        'http://localhost:3000/'
+      // Make sure to include `https://` when not localhost.
+      url = url.startsWith('http') ? url : `https://${url}/app`
+      // Make sure to include a trailing `/`.
+      url = url.endsWith('/') ? url : `${url}/app`
+      return url
+    }
+    
     const { data, error } = await supabase.auth.signInWithOAuth({
-        provider: 'github',
-        options: {
-            redirectTo: 'https://ttt.not.icu/app'
-        },
+      provider: 'github',
+      options: {
+        redirectTo: getURL(),
+      },
     })
 
     if (error) {
