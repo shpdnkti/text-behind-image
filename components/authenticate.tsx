@@ -12,10 +12,6 @@ const Authenticate = () => {
     const { error } = await supabase.auth.signInWithOAuth({
         provider: 'github',
         options: {
-            queryParams: {
-                access_type: 'offline',
-                prompt: 'consent',
-            },
             redirectTo: 'https://paepbxtqepuaxrfstzwk.supabase.co/app'
         },
     })
