@@ -22,10 +22,6 @@ const Authenticate = () => {
             description: "Please try again.",
         })
     }
-
-    if (data.url) {
-      redirect(data.url)
-    }
   }
 
   return (
