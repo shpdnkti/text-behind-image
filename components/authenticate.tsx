@@ -12,7 +12,7 @@ const Authenticate = () => {
     const { error } = await supabase.auth.signInWithOAuth({
         provider: 'github',
         options: {
-            redirectTo: 'https://paepbxtqepuaxrfstzwk.supabase.co/app'
+            redirectTo: 'https://ttt.not.icu/app'
         },
     })
 
