@@ -32,7 +32,7 @@ const page = () => {
                 </HoverBorderGradient>
             </Link>
 
-            <a href="https://www.producthunt.com/posts/text-behind-image?embed=true&utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-text&#0045;behind&#0045;image" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=494264&theme=light&period=daily" alt="Text&#0032;Behind&#0032;Image - Create&#0032;stunning&#0032;text&#0045;behind&#0045;image&#0032;designs&#0032;easily | Product Hunt" width="250" height="54" /></a>
+            {/* <a href="https://www.producthunt.com/posts/text-behind-image?embed=true&utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-text&#0045;behind&#0045;image" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=494264&theme=light&period=daily" alt="Text&#0032;Behind&#0032;Image - Create&#0032;stunning&#0032;text&#0045;behind&#0045;image&#0032;designs&#0032;easily | Product Hunt" width="250" height="54" /></a> */}
             
             <div className='w-full h-full mt-2'>
                 <HeroImages />
@@ -41,7 +41,7 @@ const page = () => {
             <div className="flex flex-col items-center justify-center my-10">
                 <AdditionalInfo />
                 <div className='text-2xl mt-10'>
-                    Created by <Link href={'https://www.rexanwong.xyz'} target="_blank" rel="noopener noreferrer" className='hover:font-bold'>Rexan Wong</Link>         
+                Powered by <Link href={'https://github.com/RexanWONG/text-behind-image'} target="_blank" rel="noopener noreferrer" className='hover:font-bold'>text-behind-image</Link> & Vercel
                 </div> 
             </div>
         </div>
