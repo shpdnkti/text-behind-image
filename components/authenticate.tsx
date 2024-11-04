@@ -10,13 +10,13 @@ const Authenticate = () => {
   
   const signInWithGoogle = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
-        provider: 'google',
+        provider: 'github',
         options: {
             queryParams: {
                 access_type: 'offline',
                 prompt: 'consent',
             },
-            redirectTo: 'https://textbehindimage.rexanwong.xyz/app'
+            redirectTo: 'https://paepbxtqepuaxrfstzwk.supabase.co/app'
         },
     })
 
